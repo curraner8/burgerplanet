@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Burger Planet</title>
+
+        <link rel="stylesheet"
+            href="{{ url_for('static', filename='game.css') }}"/>
+    </head>
+    <body>
+        <h1>Welcome To Burger Planet</h1>
+        <p id="bun1">You need to survive on this strange planet where burgers fall from the sky.</p>
+
+        <p id="lettuce">Try not to eat too many burgers so you don't get too fat, the fatter you get the slower you become and it becomes harder to survive.</p>
+
+        <p id="burger">
+            <a href="{{ url_for('rules')}}">RULES</a>
+        </p>
+
+        <p id="bun2">
+            <a href="{{ url_for('register')}}">REGISTER</a>
+        </p>
+
+        <p id="game_redirect">
+            <a href="{{ url_for('login') }}">LOGIN</a>
+        </p>
+    </body>
+</html>

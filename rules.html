@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8" />
+        <title>Rules</title>
+
+        <link rel="stylesheet"
+            href="{{ url_for('static', filename='game.css') }}"/>
+    </head>
+    <body>
+        <h1>RULES</h1>
+        <p id="rules">The aim of the game is to survive on this planet where it is raining burgers(yellow). If you reach a score of 1000, you win.</p>
+        <p id="rules">Every time a falling burger hits you, you will get fatter and slower. </p>
+        <p id="rules">There is a weight(red) at the end of the map, once you touch it you will begin to shrink to normal size and return to normal pace.</p>
+        <p id="rules">Reaching this weight however, is a tricky task, as you are faced with obstacles....</p>
+        <p id="rules">And of course we can't forget that you are trespassing on this planet, so there will be enemies zooming across the map in an attempt to kill you.</p>
+        <p id="rules">Have Fun.</p>
+        <p id="rules">
+            <a href="{{ url_for('register') }}">REGISTER</a>
+        </p>
+        <p id="rules">
+            <a href="{{ url_for('login') }}">LOGIN</a>
+        </p>
+    </body>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Levels</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='game.css') }}" />
+    </head>
+    <body>
+        <p>
+            <a id="levels" href="{{ url_for('game')}}">DIFFICULTY: NORMAL</a>
+        </p>
+        <P id="chal_urself">Challenge Yourself:</P>
+        <p>
+            <a id="levels" href="{{ url_for('level_2') }}">DIFFICULTY: HARD</a>
+        </p>
+        <p>
+            <a id="levels" href="{{ url_for('level_3') }}">DIFFICULTY: EXTREME</a>
+        </p>
+        <p>
+            <a id="levels" href="{{ url_for('bonus_level')}}">BONUS LEVEL: SURVIVE THE STORM</a>
+        </p>
+
+    </body>
+</html>

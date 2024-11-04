@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8" />
+        <title>Game</title>
+
+        <link rel="stylesheet" 
+            href="{{ url_for('static', filename='game.css') }}" />
+
+        <script src="{{ url_for('static', filename='game.js')}}"
+                 type="module">
+        </script>
+    </head>
+    <body>
+        <p id="game_title">Burger Planet</p>
+        <canvas width="512" height="320">
+        </canvas>
+        <p id="outcome">
+        </p>
+        <p>
+            <a id="levels_redirect" href="{{ url_for('levels')}}">Other Levels</a>
+        </p>
+    </body>
+</html> 
